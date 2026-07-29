@@ -6,25 +6,25 @@ const products = [
     id: 1,
     title: 'Selpak Professional Extra Z-Сложенное полотенце для диспенсера',
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
-    image: '/images/selpak-z.png', 
+    image: '/products1.png',
   },
   {
     id: 2,
     title: 'Sens Туалетная бумага 24 шт.',
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
-    image: '/products1.png',
+    image: '/products2.png',
   },
   {
     id: 3,
     title: 'Solo Professional 1/6 Складные салфетки Официант 26,5×33 см 100 шт.',
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
-    image: '/products2.png',
+    image: '/products3.png',
   },
   {
     id: 4,
     title: 'Selpak Professional Extra Туалетная бумага 24 шт.',
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
-    image: '/images/selpak-toilet.png',
+    image: '/products4.png',
   },
 ];
 
