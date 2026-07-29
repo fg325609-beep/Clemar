@@ -1,15 +1,9 @@
-import React from 'react'
-import Header from './companents/header/page'
+import Hero from '@/components/hero/page';
 
-const page = () => {
+export default function Home() {
   return (
-    <>
-    <header>
-<Header/>
-    </header>
-
-    </>
-  )
+    <main>
+   
+    </main>
+  );
 }
-
-export default page
