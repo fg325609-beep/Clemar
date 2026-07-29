@@ -30,7 +30,7 @@ const products = [
 
 function Products() {
   return (
-    <section className="max-w-[1440px] mx-auto px-4 py-10">
+    <section className="max-w-[1200px] mx-auto px-4 py-10">
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-2xl md:text-3xl font-bold text-[#1a1a1a]">
           Бумажная продукция
