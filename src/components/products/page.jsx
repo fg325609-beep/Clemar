@@ -7,7 +7,7 @@ const products = [
     id: 1,
     title: 'Selpak Professional Extra Z-Сложенное полотенце для диспенсера',
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
-    image: '/products1.png', 
+    image: '/produkts1.png', 
     buttonText: 'Подробнее',
     link: '/catalog/t45-50b',
   },
