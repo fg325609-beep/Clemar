@@ -5,12 +5,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const Kategoriya = () => {
-  // Figma dizayni bo'yicha ma'lumotlar ro'yxati
   const categories = [
     {
       id: 1,
       title: 'Бумажная продукция',
-      imageSrc: '/1.png', // public ichidagi rasm manzili
+      imageSrc: '/1.png', 
       link: '/catalog/paper',
     },
     {
@@ -43,7 +42,6 @@ const Kategoriya = () => {
     <section className="w-full bg-white py-12 md:py-16">
       <div className="max-w-[1200px] mx-auto px-5">
         
-        {/* 1. Sarlavha va "Смотреть все" havolasi */}
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1c1c1c] tracking-tight">
             Категории
@@ -59,7 +57,6 @@ const Kategoriya = () => {
           </Link>
         </div>
 
-        {/* 2. Kategoriyalar Gridi (Mobil uchun 2 ta, planshetda 3 ta, kompyuterda 5 ta ustun) */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6">
           {categories.map((cat) => (
             <Link
@@ -67,7 +64,6 @@ const Kategoriya = () => {
               key={cat.id}
               className="flex flex-col group cursor-pointer"
             >
-              {/* Rasm uchun kulrang, yumaloq burchakli quti (Card) */}
               <div className="relative w-full aspect-square bg-[#f5f5f7] rounded-2xl flex items-center justify-center p-6 transition-all duration-300 group-hover:shadow-sm group-hover:bg-[#ededf0]">
                 <div className="relative w-full h-full">
                   <Image
@@ -79,8 +75,6 @@ const Kategoriya = () => {
                   />
                 </div>
               </div>
-
-              {/* Kategoriya matni */}
               <h3 className="mt-4 text-gray-900 font-medium text-sm md:text-[15px] text-left leading-snug transition-colors group-hover:text-[#009ee2]">
                 {cat.title}
               </h3>
