@@ -7,7 +7,7 @@ const products = [
     id: 1,
     title: 'Selpak Professional Extra Z-Сложенное полотенце для диспенсера',
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
-    image: '/produkts1.png', 
+    image: '/products1.png', 
     buttonText: 'Подробнее',
     link: '/catalog/t45-50b',
   },
@@ -56,8 +56,9 @@ function Products() {
         {products.map((item) => (
           <div 
             key={item.id} 
-            className="bg-white rounded-lg p-4 border border-gray-100 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow"
+            className="bg-white p-4 flex flex-col justify-between items-start"
           >
+            {/* Rasm */}
             <div className="relative w-full h-48 mb-4 flex items-center justify-center">
               <Image 
                 src={item.image} 
@@ -67,7 +68,8 @@ function Products() {
               />
             </div>
 
-            <div className="flex flex-col flex-grow justify-between">
+            {/* Matn va Tugma */}
+            <div className="flex flex-col flex-grow justify-between items-start w-full">
               <div>
                 <h3 className="text-sm font-semibold text-gray-900 line-clamp-3 mb-2 min-h-[40px]">
                   {item.title}
@@ -77,9 +79,10 @@ function Products() {
                 </p>
               </div>
 
+              {/* Figma bilan 1:1 bir xil tugma */}
               <Link
                 href={item.link}
-                className="inline-flex items-center justify-center px-6 py-2.5 bg-[#009ee2] hover:bg-[#008ec9] text-white font-medium text-sm transition-colors duration-200 shadow-sm rounded-md"
+                className="inline-flex items-center justify-center px-6 py-3 bg-[#00aeff] hover:bg-[#008ec9] text-white font-medium text-sm transition-colors duration-200 rounded-none w-fit"
               >
                 {item.buttonText}
               </Link>
