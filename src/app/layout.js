@@ -3,6 +3,9 @@ import "./globals.css";
 import Header from "@/components/header/page";
 import Footer from "@/components/footer/page";
 import Hero from "@/components/hero/page";
+import Kategoriya from "@/components/categoriya/page";
+import Aparatlar from "@/components/aparatlar/page";
+Aparatlar
 
 
 const geistSans = Geist({
@@ -29,6 +32,8 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Header />
         <Hero/>
+        <Kategoriya/>
+        <Aparatlar/>
         <main className="flex-1">{children}</main>
         <Footer />
       </body>
