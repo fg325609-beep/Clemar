@@ -34,7 +34,7 @@ const Aparatlar = () => {
       id: 4,
       title: 'T45/50B',
       category: 'ПОЛОМОЕЧНЫЕ МАШИНЫ',
-      imageSrc: '/7.jpg', 
+      imageSrc: '/6.jpg', 
       price: '100000 UZS',
       oldPrice: '1200000 UZS',
       buttonText: 'В корзину',
