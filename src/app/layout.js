@@ -5,6 +5,7 @@ import Footer from "@/components/footer/page";
 import Hero from "@/components/hero/page";
 import Kategoriya from "@/components/categoriya/page";
 import Aparatlar from "@/components/aparatlar/page";
+import Products from "@/components/products/page";
 Aparatlar
 
 
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
         <Hero/>
         <Kategoriya/>
         <Aparatlar/>
+        <Products/>
         <main className="flex-1">{children}</main>
         <Footer />
       </body>
