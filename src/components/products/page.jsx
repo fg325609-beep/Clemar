@@ -68,7 +68,7 @@ function Products() {
               />
             </div>
 
-            {/* Matn va Tugma */}
+           
             <div className="flex flex-col flex-grow justify-between items-start w-full">
               <div>
                 <h3 className="text-sm font-semibold text-gray-900 line-clamp-3 mb-2 min-h-[40px]">
