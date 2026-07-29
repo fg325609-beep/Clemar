@@ -34,10 +34,9 @@ const Aparatlar = () => {
       id: 4,
       title: 'T45/50B',
       category: 'ПОЛОМОЕЧНЫЕ МАШИНЫ',
-      imageSrc: '/7.jpg',
+      imageSrc: '/7.jpg', 
       price: '100000 UZS',
       oldPrice: '1200000 UZS',
-      badge: 'СКИДКА',
       buttonText: 'В корзину',
       link: '/catalog/t45-50b',
     },
@@ -64,16 +63,9 @@ const Aparatlar = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6">
           {products.map((product) => (
-            <div key={product.id} className="flex flex-col items-start group relative">
+            <div key={product.id} className="flex flex-col items-start group relative w-full">
               
               <div className="relative w-full h-[260px] flex items-center justify-center mb-4 bg-white rounded-lg p-4">
-                
-                {product.badge && (
-                  <span className="absolute top-2 left-0 bg-[#ff3b30] text-white text-[11px] font-bold px-2.5 py-1 rounded-sm uppercase tracking-wider z-10">
-                    {product.badge}
-                  </span>
-                )}
-
                 <div className="relative w-full h-full">
                   <Image
                     src={product.imageSrc}
@@ -89,12 +81,16 @@ const Aparatlar = () => {
                 {product.title}
               </h3>
 
-              {product.price && (
-                <div className="flex items-baseline gap-2 mb-1">
-                  <span className="text-[16px] font-bold text-gray-950">{product.price}</span>
-                  <span className="text-xs text-gray-400 line-through">{product.oldPrice}</span>
-                </div>
-              )}
+              <div className="h-7 flex items-baseline gap-2 mb-1">
+                {product.price ? (
+                  <>
+                    <span className="text-[16px] font-bold text-gray-950">{product.price}</span>
+                    <span className="text-xs text-gray-400 line-through">{product.oldPrice}</span>
+                  </>
+                ) : (
+                  <span className="block">&nbsp;</span>
+                )}
+              </div>
 
               <p className="text-[11px] font-medium text-gray-500 uppercase tracking-wider mb-5">
                 {product.category}
