@@ -1,30 +1,36 @@
 import React from 'react';
 import Image from 'next/image';
-
+import Link from 'next/link';
 const products = [
   {
     id: 1,
     title: 'Selpak Professional Extra Z-Сложенное полотенце для диспенсера',
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
     image: '/produkts1.png',
+     buttonText: 'Подробнее',
   },
   {
     id: 2,
     title: 'Sens Туалетная бумага 24 шт.',
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
     image: '/products2.png',
+     buttonText: 'Подробнее',
+        link: '/catalog/t35b',
   },
   {
     id: 3,
     title: 'Solo Professional 1/6 Складные салфетки Официант 26,5×33 см 100 шт.',
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
     image: '/products3.png',
+     buttonText: 'Подробнее',
   },
   {
     id: 4,
     title: 'Selpak Professional Extra Туалетная бумага 24 шт.',
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
     image: '/products4.png',
+     buttonText: 'Подробнее',
+      link: '/catalog/t55-50b',
   },
 ];
 
@@ -67,9 +73,12 @@ function Products() {
                   {item.category}
                 </p>
               </div>
-              <button className="w-full bg-[#00aeff] text-white py-2 px-4 rounded-md text-xs font-semibold hover:bg-[#008ce3] transition-colors">
-                Подробнее
-              </button>
+              <Link
+                href={product.link}
+                className="inline-flex items-center justify-center px-6 py-2.5 bg-[#009ee2] hover:bg-[#008ec9] text-white font-medium text-sm transition-colors duration-200 shadow-sm"
+              >
+                {product.buttonText}
+              </Link>
             </div>
           </div>
         ))}
