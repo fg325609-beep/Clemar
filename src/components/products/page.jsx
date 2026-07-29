@@ -6,19 +6,19 @@ const products = [
     id: 1,
     title: 'Selpak Professional Extra Z-Сложенное полотенце для диспенсера',
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
-    image: '/images/selpak-z.png', // Rasmlar yo'lini o'zingiznikiga moslang
+    image: '/images/selpak-z.png', 
   },
   {
     id: 2,
     title: 'Sens Туалетная бумага 24 шт.',
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
-    image: '/images/sens.png',
+    image: '/products1.png',
   },
   {
     id: 3,
     title: 'Solo Professional 1/6 Складные салфетки Официант 26,5×33 см 100 шт.',
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
-    image: '/images/solo.png',
+    image: '/products2.png',
   },
   {
     id: 4,
@@ -31,7 +31,6 @@ const products = [
 function Products() {
   return (
     <section className="max-w-[1440px] mx-auto px-4 py-10">
-      {/* Sarlavha va link */}
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-2xl md:text-3xl font-bold text-[#1a1a1a]">
           Бумажная продукция
@@ -43,15 +42,13 @@ function Products() {
           Смотреть все &rarr;
         </a>
       </div>
-
-      {/* Grid mahsulotlar ro'yxati */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {products.map((item) => (
           <div 
             key={item.id} 
             className="bg-white rounded-lg p-4 border border-gray-100 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow"
           >
-            {/* Rasm maydoni */}
+          
             <div className="relative w-full h-48 mb-4 flex items-center justify-center">
               <Image 
                 src={item.image} 
@@ -61,7 +58,6 @@ function Products() {
               />
             </div>
 
-            {/* Mahsulot ma'lumotlari */}
             <div className="flex flex-col flex-grow justify-between">
               <div>
                 <h3 className="text-sm font-semibold text-gray-900 line-clamp-3 mb-2 min-h-[40px]">
@@ -71,8 +67,6 @@ function Products() {
                   {item.category}
                 </p>
               </div>
-
-              {/* Tugma */}
               <button className="w-full bg-[#00aeff] text-white py-2 px-4 rounded-md text-xs font-semibold hover:bg-[#008ce3] transition-colors">
                 Подробнее
               </button>
