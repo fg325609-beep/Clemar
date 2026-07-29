@@ -1,8 +1,14 @@
 import React from 'react'
+import Header from './companents/header/page'
 
 const page = () => {
   return (
-    <div>page</div>
+    <>
+    <header>
+<Header/>
+    </header>
+
+    </>
   )
 }
 
