@@ -77,7 +77,6 @@ function Products() {
                 </p>
               </div>
 
-              {/* Bu yerda product.link va product.buttonText o'rniga item ishlatildi */}
               <Link
                 href={item.link}
                 className="inline-flex items-center justify-center px-6 py-2.5 bg-[#009ee2] hover:bg-[#008ec9] text-white font-medium text-sm transition-colors duration-200 shadow-sm rounded-md"
