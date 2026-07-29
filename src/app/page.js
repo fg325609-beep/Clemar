@@ -1,5 +1,5 @@
 import React from 'react'
-import hero from "../app/companents/hero"
+import hero from "./companents/Hero"
 const page = () => {
   return (
     <div>
