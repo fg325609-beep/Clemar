@@ -2,7 +2,9 @@ import React from 'react'
 
 function page() {
   return (
-    <div className='hero'></div>
+    <div className='hero'>
+        
+    </div>
   )
 }
 
