@@ -1,9 +1,9 @@
 import React from 'react'
-import hero from "./companents/Hero"
+import Hero from './companents/Hero/page'
 const page = () => {
   return (
     <div>
-      <hero/>
+      <Hero/>
     </div>
   )
 }
