@@ -58,7 +58,7 @@ function Products() {
             key={item.id} 
             className="bg-white p-4 flex flex-col justify-between items-start"
           >
-            {/* Rasm */}
+      
             <div className="relative w-full h-48 mb-4 flex items-center justify-center">
               <Image 
                 src={item.image} 
