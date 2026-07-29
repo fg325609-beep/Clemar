@@ -23,6 +23,7 @@ const products = [
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
     image: '/products3.png',
      buttonText: 'Подробнее',
+      link: '/catalog/t55-50bt',
   },
   {
     id: 4,
