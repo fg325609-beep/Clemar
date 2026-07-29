@@ -79,7 +79,6 @@ function Products() {
                 </p>
               </div>
 
-              {/* Figma bilan 1:1 bir xil tugma */}
               <Link
                 href={item.link}
                 className="inline-flex items-center justify-center px-6 py-3 bg-[#00aeff] hover:bg-[#008ec9] text-white font-medium text-sm transition-colors duration-200 rounded-none w-fit"
