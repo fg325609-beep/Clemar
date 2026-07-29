@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 
-// Swiper stil fayllari
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
@@ -61,10 +61,10 @@ export default function Hero() {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            {/* Har bir slaydning umumiy konteyneri va balandligi */}
+            
             <div className="relative w-full h-[450px] sm:h-[520px] md:h-[600px] flex items-center">
               
-              {/* 1. Orqa fondagi to'liq yoyilgan rasm (Background Image) */}
+              
               <div className="absolute inset-0 z-0">
                 <Image
                   src={slide.imageSrc}
@@ -74,11 +74,11 @@ export default function Hero() {
                   sizes="100vw"
                   className="object-cover object-center"
                 />
-                {/* Matnlar oson o'qilishi uchun qora gradient to'siq (Overlay) */}
+                
                 <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent md:from-black/70" />
               </div>
 
-              {/* 2. Old tarafdagi kontentlar (Matn va Tugma) */}
+              
               <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div className="max-w-2xl text-left">
                   <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight whitespace-pre-line mb-4 drop-shadow-sm">

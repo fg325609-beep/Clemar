@@ -7,11 +7,10 @@ const Header = () => {
         <header className="w-full bg-white font-sans border-b border-gray-100">
             <nav className="max-w-[1400px] mx-auto flex justify-between items-center px-6 py-4">
                 
-                {/* Chap tomon: Logo va Katalog */}
+                
                 <div className="flex items-center gap-10">
                     
                     <div className="flex items-center cursor-pointer">
-                                               
                         <Image 
                           src="/logo.png"          // <-- Mana shunday string ko'rinishida yozing
                           alt="Clemar Logo" 
@@ -21,7 +20,7 @@ const Header = () => {
                         />
                     </div>
                     
-                    {/* Katalog menyusi */}
+                    
                     <div className="flex items-center gap-1.5 text-[15px] font-medium text-gray-700 cursor-pointer hover:text-[#009ee2] transition-colors duration-200">
                         <span>КАТАЛОГ</span>
                         <svg className="mt-0.5" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,10 +29,10 @@ const Header = () => {
                     </div>
                 </div>
 
-                {/* O'ng tomon: Qidiruv, Savatcha, Ish vaqti va Tugma */}
+                
                 <div className="flex items-center gap-8">
                     
-                    {/* Ikonkalar guruhi */}
+                    
                     <div className="flex items-center gap-5">
                         <button className="text-gray-800 hover:text-[#009ee2] transition-colors duration-200 outline-none flex items-center justify-center bg-transparent border-none cursor-pointer" aria-label="Search">
                             <FiSearch size={22} strokeWidth={1.5} />
@@ -43,13 +42,13 @@ const Header = () => {
                         </button>
                     </div>
 
-                    {/* Ish tartibi (Режим работы) */}
+                    
                     <div className="flex flex-col text-sm text-gray-900 tracking-tight">
                         <span className="text-[12px] text-gray-600 mb-0.5 uppercase tracking-wide">Режим работы:</span>
                         <span className="font-medium text-[15px]">ПН-ПТ С 9:00 ДО 18:00</span>
                     </div>
 
-                    {/* Sotuv bo'limi ko'k tugmasi */}
+                    
                     <button className="bg-[#009ee2] hover:bg-[#0084c2] text-white px-7 py-3 text-[14px] font-medium rounded-md transition-colors duration-200 cursor-pointer outline-none tracking-wide border-none">
                         ОТДЕЛ ПРОДАЖ
                     </button>

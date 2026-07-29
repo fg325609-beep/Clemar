@@ -8,11 +8,11 @@ const Footer = () => {
       <div className="max-w-[1200px] mx-auto px-5 py-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
 
-          {/* 1. Logotip va qisqacha matn (Chap taraf) */}
+          
           <div className="col-span-1 md:col-span-6 flex flex-col items-start">
             <Link href="/" className="mb-6 inline-block">
               <Image
-                src="/logo2.png" // 🚀 To'g'rilangan joyi: public so'zi olib tashlandi
+                src="/logo2.png"
                 alt="Clemar Logo"
                 width={160}
                 height={50}
@@ -25,7 +25,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* 2. Havolalar (O'rta taraf) */}
+          
           <div className="col-span-1 md:col-span-3">
             <ul className="space-y-3.5 text-[15px] text-gray-300 font-light">
               <li><Link href="/account" className="hover:text-white transition-colors">My Account</Link></li>
@@ -36,7 +36,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* 3. Kontaktlar (O'ng taraf) */}
+          
           <div className="col-span-1 md:col-span-3">
             <ul className="space-y-3 text-[15px] text-gray-300 font-light">
               <li>Phone: (+63) 555 1212</li>
