@@ -23,7 +23,7 @@ const products = [
     id: 3,
     title: 'Solo Professional 1/6 Складные салфетки Официант 26,5×33 см 100 шт.',
     category: 'БУМАЖНАЯ ПРОДУКЦИЯ',
-    image: '/products3.png',
+    image: '/products3.jpg',
     buttonText: 'Подробнее',
     link: '/catalog/t55-50bt',
   },
