@@ -6,8 +6,16 @@ import Hero from "@/components/hero/page";
 import Kategoriya from "@/components/categoriya/page";
 import Aparatlar from "@/components/aparatlar/page";
 import Products from "@/components/products/page";
+<<<<<<< HEAD
 import TrustedBy from "@/components/trustedby/page";
 const geistSans = Geist( {
+=======
+import Partners from "../components/pantners/page"
+Aparatlar
+
+
+const geistSans = Geist({
+>>>>>>> e490d8d (some changes)
   variable: "--font-geist-sans",
   subsets: [ "latin" ],
 } );
@@ -30,12 +38,21 @@ export default function RootLayout( { children } ) {
     >
       <body className="min-h-full flex flex-col">
         <Header />
+<<<<<<< HEAD
         <Hero />
         <Kategoriya />
         <Aparatlar />
         <Products />
         <TrustedBy />
         <main className="flex-1">{ children }</main>
+=======
+        <Hero/>
+        <Kategoriya/>
+        <Aparatlar/>
+        <Products/>
+        <main className="flex-1">{children}</main>
+        <Partners/>
+>>>>>>> e490d8d (some changes)
         <Footer />
       </body>
     </html>
